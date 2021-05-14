@@ -1,6 +1,7 @@
 from aws_cdk import core
 from aws_cdk import aws_rds as rds
 from aws_cdk import aws_ec2 as ec2
+
 from data_platform.active_environment import active_environment
 
 
@@ -64,3 +65,7 @@ class CommonStack(core.Stack):
             removal_policy=core.RemovalPolicy.DESTROY,
             **kwargs,
         )
+
+from aws_cdk import (
+   aws_rds as rds
+)
