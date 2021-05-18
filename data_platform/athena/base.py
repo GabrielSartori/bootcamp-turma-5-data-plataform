@@ -3,8 +3,6 @@ from aws_cdk import (
     aws_s3 as s3,
     aws_athena as athena,
 )
-
-
 class BaseAthenaBucket(s3.Bucket):
 
     def __init__(self, scope: core.Construct, **kwargs) -> None:
